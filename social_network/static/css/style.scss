@@ -1,0 +1,32 @@
+body {
+    background-image: url("../img/_Mmie1NLreo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.publications {
+    &__header {
+        text-align: center;
+        font-size: 40px;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+    }
+    &__post {
+        box-sizing: border-box;
+        width: 600px;
+        border: 3px solid black;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 4px 4px rgb(60, 60, 60);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

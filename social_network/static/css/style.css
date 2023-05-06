@@ -1,0 +1,29 @@
+body {
+  background-image: url("../img/_Mmie1NLreo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.publications__header {
+  text-align: center;
+  font-size: 40px;
+}
+.publications__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+.publications__post {
+  box-sizing: border-box;
+  width: 600px;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 4px 4px rgb(60, 60, 60);
+  transition: transform 0.3s ease-in-out;
+}
+.publications__post:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */

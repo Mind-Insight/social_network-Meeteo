@@ -1,9 +1,22 @@
 {% extends 'base.html' %}
 
 {% block title %}
-  Publications
+  {{ title }}
 {% endblock %}
 
 {% block content %}
-  Recent Publications
+  <h1 class="publications__header">Publications</h1>
+  {% for publication in publications %}
+    <div class="publications__container">
+      <div class="publications__post">
+        <h2><b>{{ publication.title }}</b></h2>
+        <p>{{ publication.main }}</p>
+        <p>{{ publication.description }}</p>
+        {{ publication.date }}
+        <p>{{ publication.likes }}</p>
+      </div>
+    </div>
+    {% empty %}
+    пока публикаций нет
+  {% endfor %}
 {% endblock %}
