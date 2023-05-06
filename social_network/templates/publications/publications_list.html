@@ -10,13 +10,14 @@
     <div class="publications__container">
       <div class="publications__post">
         <h2><b>{{ publication.title }}</b></h2>
-        <p>{{ publication.main }}</p>
+        <p>{{ publication.main|truncatewords:10 }}</p>
         <p>{{ publication.description }}</p>
         {{ publication.date }}
         <p>{{ publication.likes }}</p>
+        <a href="{% url 'publications:publication_detail' publication.id %}">See details</a>
       </div>
     </div>
     {% empty %}
-    пока публикаций нет
+    <h2>There is no publications yet :( </h2>
   {% endfor %}
 {% endblock %}
