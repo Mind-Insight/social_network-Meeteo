@@ -6,7 +6,7 @@
 
 {% block content %}
     <h2><b>{{ publication.title }}</b></h2>
-    <p>{{ publication.main }}</p>
+    <p>{{ publication.main|linebreaksbr }}</p>
     <p>{{ publication.description }}</p>
     {{ publication.date }}
     <p>{{ publication.likes }}</p>
