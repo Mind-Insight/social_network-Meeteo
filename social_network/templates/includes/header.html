@@ -4,19 +4,18 @@
       {% with request.resolver_match.view_name as view_name %}
       <li class="menu__item">
         <i class="fa-solid fa-newspaper"></i>
-        <a href="#">Publications</a>
+        <a href="{% url 'publications:publications_list' %}">Publications</a>
       </li>
 
       <li class="menu__item">
         <i class="fa-solid fa-comments"></i>
-        <a href="#">Chats</a>
+        <a href="{% url 'chats:chats_list' %}">Chats</a>
       </li>
 
       <li class="menu__item">
         <i class="fa-solid fa-user"></i>
-        <a href="#">Profile</a>
+        <a href="{% url 'profile:user_profile' %}">Profile</a>
       </li>
-        
 
       <li class="menu__item">
         <i class="fa-solid fa-user-group"></i>

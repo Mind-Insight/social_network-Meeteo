@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+
+def chats_list(request):
+    context = {}
+    return render(request, 'chats/chats_list.html', context)
