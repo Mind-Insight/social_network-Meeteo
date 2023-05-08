@@ -5,11 +5,13 @@
 {% endblock %}
 
 {% block content %}
-  <div class="publication_detail">
-    <h2><b>{{ publication.title }}</b></h2>
-    <p>{{ publication.main|linebreaksbr }}</p>
-    <p>{{ publication.description }}</p>
-    {{ publication.date }}
-    <p>{{ publication.likes }}</p>
+  <div class="full">
+    <div class="publication_detail">
+      <h2><b>{{ publication.title }}</b></h2>
+      <p>{{ publication.main|linebreaksbr }}</p>
+      <p>{{ publication.description }}</p>
+      {{ publication.date }}
+      <p>{{ publication.likes }}</p>
+    </div>
   </div>
 {% endblock %}
