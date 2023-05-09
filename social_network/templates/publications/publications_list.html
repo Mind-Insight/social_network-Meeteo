@@ -9,12 +9,13 @@
   {% for publication in publications %}
     <div class="publications__container">
       <div class="publications__post">
-        <h2><b>{{ publication.title }}</b></h2>
-        <p>{{ publication.main|truncatewords:10 }}</p>
-        <p>{{ publication.description }}</p>
-        {{ publication.date }}
-        <p>{{ publication.likes }}</p>
-        <a href="{% url 'publications:publication_detail' publication.id %}">See details</a>
+        <a href="{% url 'publications:publication_detail' publication.id %}">
+          <h2><b>{{ publication.title }}</b></h2>
+          <p>{{ publication.main|truncatewords:10 }}</p>
+          <p>{{ publication.description }}</p>
+          {{ publication.date }}
+          <p>{{ publication.likes }}</p>
+        </a>
       </div>
     </div>
     {% empty %}
