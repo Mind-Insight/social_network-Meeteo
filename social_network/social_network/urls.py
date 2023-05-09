@@ -7,5 +7,5 @@ urlpatterns = [
     path('chats/', include('chats.urls')),
     path('about/', include('about.urls')),
     path('profile/', include('user_profile.urls')),
-#     path('friends/', include('friends.urls')),
+    path('friends/', include('friends.urls')),
 ]
