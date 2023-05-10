@@ -30,7 +30,7 @@ INSTALLED_APPS = [
     'publications.apps.PublicationsConfig',
     'about.apps.AboutConfig',
     'friends.apps.FriendsConfig',
-    'user_profile.apps.UserProfileConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [

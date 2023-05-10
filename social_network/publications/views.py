@@ -26,7 +26,54 @@ publications = [
                    (мн. ч. котя́та).Слово «кошка» в русском языке является диминутивом от др.-русск. слова «котъка»[13],<br>
                    которое в свою очередь происходит от существительного «кот» и является родственным лат. cattus — кошка[14]<br>
                    (так в поздней латыни, начиная с V века, в отличие от классического латинского felis)<br>
-                   и близким названиям во многих языках Европы и Ближнего Востока""",
+                   и близким названиям во многих языках Европы и Ближнего Востокаasdf
+                   a
+                   sd
+                   f
+                   a
+                   x = {'apple', 'banana', 'cherry'}
+                   y = {'google', 'microsoft', 'apple'}
+                   z = x.difference(y)
+                   print(z)f
+                   asdf
+                   
+                   asd
+                   f
+                   a
+                   x = {'apple', 'banana', 'cherry'}
+                   y = {'google', 'microsoft', 'apple'}
+                   z = x.difference(y)
+                   print(z)f
+                   as
+                   df
+                   asdfsd
+                   fas
+                   d
+                   f
+                   as
+                   d
+                   f
+                   as
+                   df
+                   
+                   asdf
+                   asd
+                   f
+                   as
+                   df
+                   asdf
+                   a
+                   s
+                   d
+                   f
+                   as
+                   df
+                   as
+                   df
+                   
+                   sd
+                   f
+                   """,
         'description': 'cat post',
         'date': '01-09-2023',
         'likes': 0,

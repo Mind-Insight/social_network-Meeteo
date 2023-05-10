@@ -6,6 +6,6 @@ urlpatterns = [
     path('', include('publications.urls')),
     path('chats/', include('chats.urls')),
     path('about/', include('about.urls')),
-    path('profile/', include('user_profile.urls')),
+    path('', include('users.urls')),
     path('friends/', include('friends.urls')),
 ]
