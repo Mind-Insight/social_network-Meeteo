@@ -1,26 +1,26 @@
 from django.shortcuts import render, redirect
-from .forms import *
+from .forms import RegisterForm
 
 
 def user_profile(request):
-    return render(request, 'users/user_profile.html')
+    return render(request, "users/user_profile.html")
 
 
 def register(request):
-    if request.method == 'POST':
+    if request.method == "POST":
         form = RegisterForm(request.POST)
         # if form.is_valid():
         #     user = form.save()
         #     login(request, user)
-        return redirect('/')
+        return redirect("/")
     else:
         form = RegisterForm()
 
     context = {
-        'form': form,
+        "form": form,
     }
-    return render(request, 'users/register.html', context)
+    return render(request, "users/register.html", context)
 
 
 def login(request):
-    return render(request, 'users/login.html')
+    return render(request, "users/login.html")
