@@ -7,6 +7,12 @@ class Publication(models.Model):
         "Заголовок",
         max_length=50,
     )
+    slug = models.SlugField(
+        "URL",
+        max_length=50,
+        unique=True,
+        db_index=True,
+    )
     main = models.TextField(
         "Основной контент",
         max_length=2000,

@@ -12,6 +12,7 @@ class PublicationAdmin(admin.ModelAdmin):
     )
 
     list_editable = ("is_public",)
+    prepopulated_fields = {"slug": ("title",)}
 
 
 admin.site.register(Publication, PublicationAdmin)

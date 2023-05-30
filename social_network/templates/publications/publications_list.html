@@ -9,7 +9,7 @@
 {% for publication in publications %}
 <div class="publications__container">
   <div class="publications__post">
-    <a href="{% url 'publications:publication_detail' publication.id %}">
+    <a href="{% url 'publications:publication_detail' publication.slug %}">
       <h2><b>{{ publication.title }}</b></h2>
       <p>{{ publication.main|truncatewords:10 }}</p>
       {{ publication.publication_date }}
