@@ -87,8 +87,6 @@ body {
         height: auto;
         margin-right: 10px;
         vertical-align: middle;
-        border-radius: 50%;
-        border: 1.8px solid black;
     }
     &__logo span {
         display: inline-block;
@@ -130,6 +128,11 @@ body {
     }
 }
 
+.center {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 200px;
+}
 
 //! footer
 .footer {

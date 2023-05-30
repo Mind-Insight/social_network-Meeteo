@@ -80,8 +80,6 @@ body {
   height: auto;
   margin-right: 10px;
   vertical-align: middle;
-  border-radius: 50%;
-  border: 1.8px solid black;
 }
 .menu__logo span {
   display: inline-block;
@@ -117,6 +115,12 @@ body {
   transform-origin: left;
   transform: scaleX(1);
   z-index: 0;
+}
+
+.center {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 200px;
 }
 
 .footer {

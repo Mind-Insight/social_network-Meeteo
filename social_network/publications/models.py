@@ -7,11 +7,6 @@ class Publication(models.Model):
         "Заголовок",
         max_length=50,
     )
-    description = models.TextField(
-        "Описание",
-        max_length=500,
-        blank=True,
-    )
     main = models.TextField(
         "Основной контент",
         max_length=2000,
@@ -44,6 +39,9 @@ class Publication(models.Model):
         to=User,
         on_delete=models.CASCADE,
         verbose_name="Автор публикации",
+    )
+    is_public = models.BooleanField(
+        default=True,
     )
 
     def __str__(self):

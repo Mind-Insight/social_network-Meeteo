@@ -1,3 +1,20 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Publication, Friend, Profile, Comment
+
+
+class PublicationAdmin(admin.ModelAdmin):
+    list_display = (
+        "title",
+        "main",
+        "user",
+        "is_public",
+    )
+
+    list_editable = ("is_public",)
+
+
+admin.site.register(Publication, PublicationAdmin)
+admin.site.register(Friend)
+admin.site.register(Profile)
+admin.site.register(Comment)
