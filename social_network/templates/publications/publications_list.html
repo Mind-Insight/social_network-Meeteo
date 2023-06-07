@@ -1,24 +1,24 @@
-{% extends 'base.html' %}
-
+{% extends "base.html" %}
 {% block title %}
-{{ title }}
-{% endblock %}
-
+  {{ title }}
+{% endblock title %}
 {% block content %}
-<h1 class="publications__header">Publications</h1>
-{% for publication in publications %}
-<div class="publications__container">
-  <div class="publications__post">
-    <a href="{% url 'publications:publication_detail' publication.slug %}">
-      <h2><b>{{ publication.title }}</b></h2>
-      <p>{{ publication.main|truncatewords:10 }}</p>
-      {{ publication.publication_date }}
-      <p>{{ publication.likes }}</p>
-      <p>{{ publication.comments_amount }}</p>
-    </a>
-  </div>
-</div>
-{% empty %}
-<h2 class="center">There is no publications yet :( </h2>
-{% endfor %}
-{% endblock %}
+
+  {% for publication in publications %}
+    <div class="publications__container">
+      <div class="publications__post">
+        <a href="{% url 'publications:publication_detail' publication.slug %}">
+          <h2>
+            <b>{{ publication.title }}</b>
+          </h2>
+          <p>{{ publication.main|truncatewords:10 }}</p>
+          {{ publication.publication_date }}
+          <p>{{ publication.likes }}</p>
+          <p>{{ publication.comments_amount }}</p>
+        </a>
+      </div>
+    </div>
+  {% empty %}
+    <h2 class="center">Пока публикаций нет. Вы можете стать первым!</h2>
+  {% endfor %}
+{% endblock content %}

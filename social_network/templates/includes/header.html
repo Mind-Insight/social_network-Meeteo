@@ -4,31 +4,34 @@
     <ul class="menu__list">
       <li class="menu__logo">
         <a href="{% url 'publications:publications_list' %}">
-          <img src="{% static 'img/apple-touch-icon.png' %}" alt="logo">
+          <img width="40px"
+               height="auto"
+               src="{% static 'img/apple-touch-icon.png' %}"
+               alt="logo">
           <span>MEETEO</span>
         </a>
       </li>
       {% with request.resolver_match.view_name as view_name %}
-
-      <li class="menu__item">
-        <i class="fa-solid fa-newspaper"></i>
-        <a href="{% url 'publications:publications_list' %}">Publications</a>
-      </li>
-
-      <li class="menu__item">
-        <i class="fa-solid fa-comments"></i>
-        <a href="{% url 'chats:chats_list' %}">Chats</a>
-      </li>
-
-      <li class="menu__item">
-        <i class="fa-solid fa-user"></i>
-        <a href="{% url 'users:user_profile' %}">Profile</a>
-      </li>
-
-      <li class="menu__item">
-        <i class="fa-solid fa-user-group"></i>
-        <a href="{% url 'friends:friends_list' %}">Friends</a>
-      </li>
+        <li class="menu__item">
+          <i class="fa-solid fa-newspaper"></i>
+          <a href="{% url 'publications:publications_list' %}">Публикации</a>
+        </li>
+        <li class="menu__item">
+          <i class="fa-solid fa-comments"></i>
+          <a href="{% url 'chats:chats_list' %}">Чаты</a>
+        </li>
+        <li class="menu__item">
+          <i class="fa-solid fa-user"></i>
+          <a href="{% url 'users:user_profile' %}">Профиль</a>
+        </li>
+        <li class="menu__item">
+          <i class="fa-solid fa-user-group"></i>
+          <a href="{% url 'friends:friends_list' %}">Друзья</a>
+        </li>
+        <li class="menu__item">
+          <i class="fa-solid fa-circle-plus"></i>
+          <a href="{% url 'publications:add_post' %}">Новая публикация</a>
+        </li>
       {% endwith %}
     </ul>
   </nav>

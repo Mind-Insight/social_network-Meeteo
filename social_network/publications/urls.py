@@ -7,8 +7,9 @@ app_name = "publications"
 urlpatterns = [
     path("", views.publications_list, name="publications_list"),
     path(
-        "<slug:publication_slug>/",
+        "publication/<slug:publication_slug>/",
         views.publication_detail,
-        name="publication_detail"
+        name="publication_detail",
     ),
+    path("add_post", views.add_post, name="add_post"),
 ]

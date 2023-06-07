@@ -10,7 +10,7 @@ class Publication(models.Model):
     slug = models.SlugField(
         "URL",
         max_length=50,
-        unique=True,
+        unique=False,
         db_index=True,
     )
     main = models.TextField(
@@ -48,6 +48,7 @@ class Publication(models.Model):
     )
     is_public = models.BooleanField(
         default=True,
+        verbose_name="Показать остальным"
     )
 
     def __str__(self):
