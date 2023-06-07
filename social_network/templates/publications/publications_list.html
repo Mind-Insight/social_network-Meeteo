@@ -3,7 +3,6 @@
   {{ title }}
 {% endblock title %}
 {% block content %}
-
   {% for publication in publications %}
     <div class="publications__container">
       <div class="publications__post">
@@ -11,10 +10,14 @@
           <h2>
             <b>{{ publication.title }}</b>
           </h2>
-          <p>{{ publication.main|truncatewords:10 }}</p>
-          {{ publication.publication_date }}
-          <p>{{ publication.likes }}</p>
-          <p>{{ publication.comments_amount }}</p>
+          <div class="publications__main">{{ publication.main|truncatewords:10 }}</div>
+          <div class="publications__footer">
+            <div class="publications__actions">
+              <p><i class="fa-regular fa-heart"></i>{{ publication.likes }}</p>
+              <p><i class="fa-regular fa-comment"></i>{{ publication.comments_amount }}</p>
+            </div>
+            <p class="publications_date">{{ publication.publication_date }}</p>
+          </div>
         </a>
       </div>
     </div>

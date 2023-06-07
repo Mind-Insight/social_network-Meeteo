@@ -5,7 +5,6 @@ from django.shortcuts import (
 )
 from django.utils.text import slugify
 from unidecode import unidecode
-from django.db.models import Q
 from .forms import AddPostForm
 
 from .models import Publication
